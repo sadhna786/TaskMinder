@@ -12,7 +12,7 @@ const HowToDoTask = () => {
       setResponse(''); // Clear previous responses while fetching new data
       try {
         // Replace with your Cohere API key
-        const apiKey = 'yk50bTOIIZ5yhbbiHEBQ28sZ8QSScXjzMR8fg3c9'; // Replace with your Cohere API key
+        const apiKey = 'your_api_key'; // Replace with your Cohere API key
 
         // Cohere endpoint for text generation
         const endpoint = 'https://api.cohere.ai/v1/generate'; 
