@@ -1,0 +1,273 @@
+/* General reset and font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1c1c; /* Black background */
+  color: #fff; /* White text */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* App container */
+.app {
+  background-color: #121212; /* Dark background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  color: #f4c542; /* Gold/yellow color */
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: bounceIn 1s ease-out, colorChange 2s infinite alternate; /* Added bounce and color change animation */
+}
+
+/* Bounce animation */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Color change effect */
+@keyframes colorChange {
+  0% {
+    color: #f4c542;
+  }
+  50% {
+    color: #d49f2a;
+  }
+  100% {
+    color: #f4c542;
+  }
+}
+
+
+/* Input field styling */
+input[type='text'] {
+  width: 100%;
+  padding: 12px 18px;
+  margin: 10px 0 20px;
+  border: 1px solid #4a90e2;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type='text']:focus {
+  border: 1px solid #f4c542; /* Gold border on focus */
+  box-shadow: 0 0 5px rgba(244, 197, 66, 0.5); /* Soft yellow glow */
+}
+
+/* Button styling */
+button {
+  background-color: #f4c542; /* Gold color */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #d49f2a; /* Darker gold color on hover */
+  transform: translateY(-2px); /* Small hover lift effect */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Task item styling */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d2d2d;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+  color: #888;
+}
+
+/* Task buttons (Delete button) */
+.task-buttons button {
+  margin-left: 8px;
+  background-color: #e74c3c; /* Red for delete */
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.task-buttons button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.filter-buttons button {
+  margin: 0 5px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button.active {
+  background-color: #f4c542; /* Active filter button with gold */
+  color: #1c1c1c; /* Black text for active state */
+}
+
+.filter-buttons button:hover {
+  background-color: #444;
+}
+
+/* How To Do Task Section */
+.how-to-do-task {
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 600px;
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  animation: fadeIn 1s ease-out;
+}
+
+.how-to-do-task h3 {
+  font-size: 28px;
+  color: #f4c542;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input-container input {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus {
+  border: 1px solid #f4c542; /* Gold border on focus */
+  box-shadow: 0 0 5px rgba(244, 197, 66, 0.5); /* Gold glow */
+}
+
+.input-container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #f4c542;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #d49f2a;
+}
+
+.input-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.response-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-left: 5px solid #f4c542;
+  border-radius: 5px;
+}
+
+.response-container h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.response-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.response {
+  background-color: #2d2d2d;
+  padding: 10px 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-top: 20px;
+}
