@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# TaskMinder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**TaskMinder** is an interactive, easy-to-use To-Do List application built with React. It allows users to manage tasks by adding, completing, deleting, and filtering them. The app also provides an innovative "How-To-Do Task" feature that helps users get AI-powered suggestions on how to complete tasks, enhancing productivity and user experience.
 
-## Available Scripts
+## Features
+- **Task Management**: Add new tasks, mark them as complete or pending, and delete completed tasks.
+- **Task Filtering**: Filter tasks based on their status — All, Completed, or Pending.
+- **How-To-Do Task**: Get task completion suggestions through AI-powered assistance (using OpenAI API).
+- **Interactive Interface**: A clean and responsive design to help users manage their tasks efficiently.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: A JavaScript library for building interactive user interfaces.
+- **CSS**: Custom styles to create an appealing user interface.
+- **OpenAI API**: For providing AI-based task completion suggestions.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sadhna786/TaskMinder.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+    ```bash
+    cd TaskMinder
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the application:
 
-### `npm run eject`
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app will open in your default web browser at [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Add Tasks**: Simply type your task in the input field and click "Add" to add it to the list.
+- **Complete Tasks**: Click the checkbox next to a task to mark it as completed.
+- **Delete Tasks**: Click the "Delete" button to remove a task from the list.
+- **Filter Tasks**: Use the filter buttons to view tasks by their status — "All", "Completed", or "Pending".
+- **Ask How-To**: Use the AI feature in the "How-To-Do Task" section to ask for suggestions on how to complete a task. The AI will provide helpful instructions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **OpenAI API**: For providing the AI-powered "How-To-Do Task" feature.
+- **React**: For enabling fast and scalable UI development.
+- **CSS**: Custom styling to enhance the user experience.
